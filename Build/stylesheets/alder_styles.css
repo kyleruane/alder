@@ -950,7 +950,31 @@ nav {
     margin: 0 auto;
     box-shadow: 0 -8px 14px -8px rgba(0, 0, 0, 0.3) inset, 0 -3px 5px -3px rgba(0, 0, 0, 0.2) inset; }
   nav ul {
-    list-style: none; }
+    list-style: none;
+    padding: 0;
+    max-width: 80%;
+    float: left; }
+    nav ul li {
+      float: left;
+      padding: 2px 20px;
+      border-right: 1px solid rgba(255, 255, 255, 0.14);
+      font-size: 14px;
+      font-family: "Merriweather"; }
+      nav ul li:last-child {
+        border: none; }
+      nav ul li a {
+        color: white; }
+  nav .social-links {
+    height: 24px;
+    text-align: right;
+    overflow: hidden;
+    width: 19%;
+    float: right;
+    margin-top: 12px;
+    padding-right: 12px; }
+    nav .social-links img {
+      max-height: 100%;
+      float: right; }
 
 .sticky.stuck {
   position: fixed;
@@ -959,7 +983,7 @@ nav {
   width: 100%;
   max-width: 980px; }
   .sticky.stuck nav {
-    margin-top: -16px; }
+    margin-top: 0; }
     .sticky.stuck nav:before {
       display: none;
       height: 0; }
@@ -1033,6 +1057,28 @@ nav {
   background: rgba(0, 0, 0, 0.03);
   height: 300px;
   margin-bottom: 30px; }
+
+footer {
+  padding: 30px 0;
+  margin-top: 40px;
+  text-align: center;
+  background-color: #3c3c3c;
+  box-shadow: 0 100px 240px -150px black inset, 0 10px 12px -10px black inset;
+  min-height: 300px; }
+  footer a.scrollup {
+    opacity: 0.4;
+    -moz-transition: opacity .7s ease-in-out;
+    -webkit-transition: opacity .7s ease-in-out;
+    -o-transition: opacity .7s ease-in-out;
+    transition: opacity .7s ease-in-out;
+    cursor: pointer;
+    border: none; }
+    footer a.scrollup:hover {
+      opacity: 0.8;
+      -moz-transition: opacity .7s ease-in-out;
+      -webkit-transition: opacity .7s ease-in-out;
+      -o-transition: opacity .7s ease-in-out;
+      transition: opacity .7s ease-in-out; }
 
 #jPanelMenu-menu {
   background: #222;
@@ -1141,26 +1187,6 @@ blockquote {
 
 .fluid-width-video-wrapper {
   margin: 30px 0; }
-
-footer {
-  border-top: 1px dotted rgba(0, 0, 0, 0.4);
-  padding: 30px 0;
-  margin-top: 40px;
-  text-align: center; }
-  footer a.scrollup {
-    opacity: 0.4;
-    -moz-transition: opacity .7s ease-in-out;
-    -webkit-transition: opacity .7s ease-in-out;
-    -o-transition: opacity .7s ease-in-out;
-    transition: opacity .7s ease-in-out;
-    cursor: pointer;
-    border: none; }
-    footer a.scrollup:hover {
-      opacity: 0.8;
-      -moz-transition: opacity .7s ease-in-out;
-      -webkit-transition: opacity .7s ease-in-out;
-      -o-transition: opacity .7s ease-in-out;
-      transition: opacity .7s ease-in-out; }
 
 .pagination {
   border-top: 1px dotted rgba(0, 0, 0, 0.25);

@@ -144,6 +144,35 @@ nav {
 	}
 	ul {
 		list-style: none;
+		padding: 0;
+		max-width: 80%;
+		float: left;
+		li {
+			float: left;
+			padding: 2px 20px;
+			border-right: 1px solid rgba(255,255,255,0.14); 
+			font-size: 14px;
+			font-family: $title;
+			&:last-child {
+				border: none;
+			}
+			a { 
+				color: white;
+			}
+		}
+	}
+	.social-links {
+		height: 24px;
+		text-align: right;
+		overflow: hidden;
+		width: 19%;
+		float: right;
+		margin-top: 12px;
+		padding-right: 12px;
+		img {
+			max-height: 100%;
+			float: right;
+		}
 	}
 }
 .sticky.stuck {
@@ -153,7 +182,7 @@ nav {
 	width: 100%;
 	max-width: $site-width;
 	nav {
-		margin-top: -16px;
+		margin-top: 0;
 		&:before {
 			display: none;
 			height: 0;
@@ -230,7 +259,24 @@ nav {
 	height: 300px;
 	margin-bottom: 30px;
 }
-
+footer {
+	padding: 30px 0;
+	margin-top: 40px;
+	text-align: center;
+	background-color: lighten($primary, 10%);
+	box-shadow: 0 100px 240px -150px black inset, 0 10px 12px -10px black inset;
+	min-height: 300px;
+	a.scrollup {
+		opacity: 0.4;
+		@include fade;
+		cursor: pointer;
+		border: none;
+		&:hover {
+			opacity: 0.8;
+			@include fade;
+		}
+	}
+}
 #jPanelMenu-menu {
 	background: #222;
 	box-shadow: -8px 0 12px -7px rgba(0,0,0,1) inset, -2px 0 4px -1px rgba(0,0,0,1) inset;
@@ -347,22 +393,6 @@ blockquote {
 }
 .fluid-width-video-wrapper {
 	margin: 30px 0;
-}
-footer {
-	border-top: 1px dotted rgba(0,0,0,0.4);
-	padding: 30px 0;
-	margin-top: 40px;
-	text-align: center;
-	a.scrollup {
-		opacity: 0.4;
-		@include fade;
-		cursor: pointer;
-		border: none;
-		&:hover {
-			opacity: 0.8;
-			@include fade;
-		}
-	}
 }
 .pagination {
 	border-top: 1px dotted rgba(0,0,0,0.25);
